@@ -1,0 +1,27 @@
+.add-container {
+    width: 69%;
+    background-color: #003545;
+    color: #fff;
+    margin: 2% auto;
+    border-radius: 10px;
+    box-shadow: 9px 5px 20px 2px rgba(0,0,0,0.57);
+    -webkit-box-shadow: 9px 5px 20px 2px rgba(0,0,0,0.57);
+    -moz-box-shadow: 9px 5px 20px 2px rgba(0,0,0,0.57);
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.add-input {
+    padding: 10px 10px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: transparent;
+    font-size: 16px;
+}
+
+.add-button {
+    border-radius: 5px !important;
+}

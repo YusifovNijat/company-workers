@@ -1,0 +1,140 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    list-style:none;
+    text-decoration:none;
+}
+
+@media (min-width: 320px) {
+    .header-container {
+        width: 75%;
+    }
+
+    .header-container h2 {
+        font-size: 18px;
+    }
+
+    header {
+        font-size: 18px;
+    }
+
+    .search-container {
+        width: 75%;
+    }
+
+    .search-input {
+        width: 85%;
+        font-size: 12px;
+    }
+
+    .filter-container button {
+        font-size: 9px;
+        padding: 10px 4px;
+    }
+
+    ul {
+        width: 75%;
+    }
+
+    li {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+    li span {
+        width: 47%;
+    }
+
+    li input {
+        width: 20%;
+        font-size: 14px;
+    }
+
+    .delete-button {
+        font-size: 14px;
+    }
+    
+    .on-bonus {
+        font-size: 14px;
+    }
+
+    .add-container {
+        width: 75%;
+    }
+
+    .add-container h2 {
+        font-size: 18px;
+    }
+    .add-input {
+        padding: 7px 10px;
+        font-size: 12px;
+    }
+
+    .add-container button {
+        display: inline-block;
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 400px){
+    .filter-container button {
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 750px){
+    .header-container h2 {
+        font-size: 22px;
+    }
+
+    header {
+        font-size: 22px;
+    }
+
+    .search-input {
+        font-size: 14px;
+    }
+
+    .filter-container button {
+        font-size: 14px;
+        padding: 10px 10px;
+    }
+
+    li {
+        font-size: 18px;
+        padding: 14px 18px;
+    }
+
+    li span {
+        width: 65%;
+    }
+
+    li input {
+        font-size: 18px;
+    }
+
+    .delete-button {
+        font-size: 18px;
+    }
+    
+    .on-bonus {
+        font-size: 18px;
+    }
+
+    .add-container h2 {
+        font-size: 22px;
+        padding: 10px 0;
+    }
+    .add-input {
+        padding: 10px 12px;
+        margin-bottom: 14px;
+        font-size: 14px;
+    }
+
+    .add-container button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}
