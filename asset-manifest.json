@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/company-workers/static/css/main.2ba10500.css",
+    "main.js": "/company-workers/static/js/main.d25dfaaa.js",
+    "index.html": "/company-workers/index.html",
+    "main.2ba10500.css.map": "/company-workers/static/css/main.2ba10500.css.map",
+    "main.d25dfaaa.js.map": "/company-workers/static/js/main.d25dfaaa.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2ba10500.css",
+    "static/js/main.d25dfaaa.js"
+  ]
+}
