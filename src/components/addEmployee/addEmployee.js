@@ -1,8 +1,12 @@
 import './addEmployee.css';
 
-import {useState} from 'react';
+import {useState, useContext} from 'react';
 
-const AddEmployee = ({onAdd}) => {
+import { Context } from '../context/context';
+
+const AddEmployee = () => {
+
+    const {onAdd} = useContext(Context);
 
     const [newEmployee, setNewEmployee] = useState({
         name: '',

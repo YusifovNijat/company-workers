@@ -2,6 +2,7 @@ import SearchPanel from '../searchPanel/searchPanel';
 import EmployeesList from '../employees-list/employees-list';
 import AddEmployee from '../addEmployee/addEmployee';
 import AppInfo from '../app-info/app-info';
+import { Context } from '../context/context';
 
 import { useState } from 'react';
 
@@ -14,7 +15,7 @@ function App() {
     {
       id: 1,
       name: 'Nijat Yusifov',
-      salary: 1000,
+      salary: 3000,
       increase: false
     },
     {
@@ -40,13 +41,18 @@ function App() {
   }
 
   const onAdd = (name, salary, increase) => {
-    const newEmployee = {
-      id: ++employees,
-      name,
-      salary,
-      increase,
+    if((name.length) > 1 && (!/[^a-z]*" "/i.test(name)) && (salary.length > 0) && /^\d/.test(salary)){
+      const newEmployee = {
+        id: ++employees,
+        name,
+        salary,
+        increase,
+      }
+      setLists([...lists, newEmployee]);
+    } 
+    else {
+      alert('-Please check if your name includes only letters and more than 1 letter as well as salary includes only numbers')
     }
-    setLists([...lists, newEmployee]);
   }
 
   const onSearch = (lists, term) => {
@@ -82,12 +88,14 @@ function App() {
   const visibleData = onFilter(onSearch(lists, term), filter);
 
   return (
-    <>
+    <Context.Provider value = {{
+      onAdd
+    }}>
       <AppInfo employees={employees} increased={increased}/>
       <SearchPanel term={term} setTerm={setTerm} filter={filter} setFilter={setFilter}/>
       <EmployeesList lists={visibleData} onDelete={onDelete} onToggleProp={onToggleProp}/>    
-      <AddEmployee onAdd={onAdd}/>
-    </>
+      <AddEmployee/>
+    </Context.Provider>
   );
 }
 
